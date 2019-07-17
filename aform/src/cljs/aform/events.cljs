@@ -6,8 +6,8 @@
 
    (re-frame/reg-event-db
      :submit
-      (fn [db_]
-       (assoc db :result"FORM SUBMITTED")))
+      (fn [db _]
+       (assoc db :result "FORM SUBMITTED")))
 
 
 (re-frame/reg-event-db
