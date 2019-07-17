@@ -6,22 +6,21 @@
  ::name
 
  (fn [db]
-   (:name db)
+   (:name db)))
 
- ))
+
 
 (re-frame/reg-sub
  ::address
 
  (fn [db]
-  
-   (:address db)
- ))
+
+   (:address db)))
+
 
 (re-frame/reg-sub
  ::occupation
 
  (fn [db]
-  
-   (:occupation db)
- ))
+
+   (:occupation db)))
