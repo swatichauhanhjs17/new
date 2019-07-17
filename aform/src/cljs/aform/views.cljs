@@ -47,9 +47,12 @@
  (let [name (re-frame/subscribe [::subs/name])]
  (let [address (re-frame/subscribe [::subs/address])]
  (let [occu (re-frame/subscribe [::subs/occupation])]
-   [:div
+ (let [result (re-frame/subscribe [::subs/result])]
+ [:div
     [:h4 "Hello from " @name]
     [:p "I am from " @address]
-    [:p "I am a " @occu]
+    [:p "I am a " @occu] 
+    [:h4 "FORM STATUS:-" @result]
     [:h2 "FILL THE FORM"]
-    [form-layout]]))))
+
+    [form-layout]])))))

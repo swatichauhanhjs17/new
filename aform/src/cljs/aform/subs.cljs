@@ -24,3 +24,10 @@
  (fn [db]
 
    (:occupation db)))
+
+(re-frame/reg-sub
+ ::result
+
+ (fn [db]
+
+   (:result db)))

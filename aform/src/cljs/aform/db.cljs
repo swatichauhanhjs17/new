@@ -1,6 +1,8 @@
 (ns aform.db)
 
 (def default-db
-  {:name "swati"  
+  { :name "swati"  
     :address "INDIA"
-    :occupation "programmer"})
+    :occupation "programmer"
+    :result "NOT SUBMITTED"
+    })
