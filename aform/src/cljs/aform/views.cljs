@@ -44,10 +44,10 @@
 
 (defn main-panel []
 
- (let [name (re-frame/subscribe [::subs/name])]
- (let [address (re-frame/subscribe [::subs/address])]
- (let [occu (re-frame/subscribe [::subs/occupation])]
- (let [result (re-frame/subscribe [::subs/result])]
+ (let [name (re-frame/subscribe [::subs/name])
+        address (re-frame/subscribe [::subs/address])
+        occu (re-frame/subscribe [::subs/occupation])
+        result (re-frame/subscribe [::subs/result])]
  [:div
     [:h4 "Hello from " @name]
     [:p "I am from " @address]
@@ -55,4 +55,4 @@
     [:h4 "FORM STATUS:-" @result]
     [:h2 "FILL THE FORM"]
 
-    [form-layout]])))))
+    [form-layout]]))
